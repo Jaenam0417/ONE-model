@@ -47,7 +47,7 @@ single_para_w = st.sidebar.slider('Please select a paramater (w)', 0.0, 10.0, (s
 st.sidebar.write('Selected a single paramater value (w):', single_para_w)
 st.sidebar.write(' ')
 
-st.sidebar.success('model input data')
+st.sidebar.success('Input data')
 if selected_target=='Soyanggang_Dam':
     uploaded_file = pd.read_csv('./datasets/sy.csv')   #url = "https://raw.githubusercontent.com/Jaenam0417/ONE_model/main/datasets/sy.csv?token=GHSAT0AAAAAAB4QYYNDOEYGXWMMNVGT5LF4Y5AAPFA"
 if selected_target=='Youngdam_Dam':
