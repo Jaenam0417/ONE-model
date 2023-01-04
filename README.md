@@ -1,2 +1,4 @@
 # ONE(One-parameter New Exponential) model
-One-parameter New Exponential model is developed to track soil water storage in a specific watershed by day. The model uses one parameter to estimate daily runoff based on an exponential function, which is a nonlinear relationship. The hydrological factors of the watershed are divided into rainfall, evaporation, and runoff. The runoff is designed to be affected by daily soil retention to minimize the parameters of the hydrological model.
+ONE model is developed to simulate daily rainfall-runoff using a single parameter depending on soil water storage in a specific watershed.
+
+The web version of ONE model, a web application using Streamlets, can be accessible at: https://one-model.streamlit.app/.
