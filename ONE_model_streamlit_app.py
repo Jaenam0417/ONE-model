@@ -15,7 +15,7 @@ from permetrics.regression import RegressionMetric
 #https://github.com/thieu1995/permetrics
 
 
-##first##################################################################
+##first loading############################################################
 #st.title("ONE model")
 st.subheader('ONE (One-parameter New Exponential) model')
 st.info('Introduction to ONE model')
@@ -227,11 +227,11 @@ result_estimate(tmp['obs_mm'],tmp['sim_mm'])
 st.markdown('**# Evaluation index**')
 col1, col2, col3, col4 = st.columns(4)
 col1.metric("Nash–Sutcliffe efficiency", str(round(NSE,2)))
-col2.metric("Coefficient of determination", str(round(R2,2)))   #Coefficient of determination 
-col4.metric("Percent bias (%)", str(round(PBIAS,2)))            #'Obs ($m^3$/s)'
+col2.metric("Coefficient of determination", str(round(R2,2)))
+col4.metric("Percent bias (%)", str(round(PBIAS,2)))
 
 result_estimate(tmp['obs_cms'],tmp['sim_cms'])
-col3.metric("Root Mean Square Error (cms)", str(round(RMSE,2))) #col3.metric("Root Mean Square Error (cms)", str(round(RMSE,2)))
+col3.metric("Root Mean Square Error (cms)", str(round(RMSE,2)))
 
 
 st.markdown('**# Daily scatter plot**')
