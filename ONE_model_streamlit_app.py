@@ -17,7 +17,7 @@ from permetrics.regression import RegressionMetric
 
 ##first##################################################################
 #st.title("ONE model")
-st.subheader('ONE (One-parameter Nonlinear Exponential) model')
+st.subheader('ONE (One-parameter New Exponential) model')
 st.info('Introduction to ONE model')
 st.write("**O**ne-parameter **N**ew **E**xponential model is developed to track soil water storage in a specific watershed by day. The model uses one parameter to estimate daily runoff based on an exponential function, which is a nonlinear relationship. The hydrological factors of the watershed are divided into rainfall, evaporation, and runoff. The runoff is designed to be affected by daily soil retention to minimize the parameters of the hydrological model.")
 ##image add
@@ -29,7 +29,7 @@ st.write("Figure shows a schematic of the ONE model. The boundary of the box rep
 
 ##sidebar##################################################################
 st.sidebar.title("ONE model")
-st.sidebar.success('model setting')
+st.sidebar.success('Model setting')
 
 selected_target = st.sidebar.radio("Please select a study area", ('Soyanggang_Dam', 'Youngdam_Dam'),horizontal=False, key='target')
 if selected_target=='Soyanggang_Dam':
