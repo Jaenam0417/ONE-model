@@ -19,7 +19,7 @@ from permetrics.regression import RegressionMetric
 #st.title("ONE model")
 st.subheader('ONE (One-parameter Nonlinear Exponential) model')
 st.info('Introduction to ONE model')
-st.write("**112233O**ne-parameter **N**ew **E**xponential model is developed to track soil water storage in a specific watershed by day. The model uses one parameter to estimate daily runoff based on an exponential function, which is a nonlinear relationship. The hydrological factors of the watershed are divided into rainfall, evaporation, and runoff. The runoff is designed to be affected by daily soil retention to minimize the parameters of the hydrological model.")
+st.write("**O**ne-parameter **N**ew **E**xponential model is developed to track soil water storage in a specific watershed by day. The model uses one parameter to estimate daily runoff based on an exponential function, which is a nonlinear relationship. The hydrological factors of the watershed are divided into rainfall, evaporation, and runoff. The runoff is designed to be affected by daily soil retention to minimize the parameters of the hydrological model.")
 ##image add
 image = Image.open('./temp/ONE_model_concept.PNG')
 #image="https://raw.githubusercontent.com/Jaenam0417/ONE_model/main/temp/ONE_model_concept.PNG?token=GHSAT0AAAAAAB4QYYNCK6MVDSIOYFQ7Y7P4Y5AEFBA"
@@ -44,7 +44,7 @@ st.sidebar.write('Selected period:', data_year)
 st.sidebar.write(' ')
 
 single_para_w = st.sidebar.slider('Please select a paramater (w)', 0.0, 10.0, (single_para_w), key='single_para_w')
-st.sidebar.write('Selected a paramater value (w):', single_para_w)
+st.sidebar.write('Selected a single paramater value (w):', single_para_w)
 st.sidebar.write(' ')
 
 st.sidebar.success('model input data')
