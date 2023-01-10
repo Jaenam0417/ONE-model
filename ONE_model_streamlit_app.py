@@ -19,7 +19,7 @@ from permetrics.regression import RegressionMetric
 #st.title("ONE model")
 st.subheader('ONE (One-parameter New Exponential) model')
 st.info('Introduction to ONE model')
-st.write("**O**ne-parameter **N**ew **E**xponential model is developed to simulate daily rainfall-runoff using a single parameter depending on soil water storage in a specific watershed. The model uses one parameter to estimate daily runoff based on an exponential function, which is a nonlinear relationship. The hydrological factors of the watershed are divided into rainfall, evaporation, and runoff. The runoff is designed to be affected by daily soil retention to minimize the parameters of the hydrological model.")
+st.write("**O**ne-parameter **N**ew **E**xponential model was developed to simulate daily rainfall-runoff using a single parameter depending on soil water storage in a specific watershed. The model uses one parameter to estimate daily runoff based on an exponential function, which is a nonlinear relationship. The hydrological factors of the watershed are divided into rainfall, evaporation, and runoff. The runoff was designed to be affected by daily soil retention to minimize the parameters of the hydrological model.")
 ##image add
 image = Image.open('./temp/ONE_model_concept.PNG')
 #image="https://raw.githubusercontent.com/Jaenam0417/ONE_model/main/temp/ONE_model_concept.PNG?token=GHSAT0AAAAAAB4QYYNCK6MVDSIOYFQ7Y7P4Y5AEFBA"
