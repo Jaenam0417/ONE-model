@@ -244,8 +244,8 @@ show_graph_heatmap(ONE)
 st.write(fig)
 
 ###Yearly
-st.markdown('**# Yearly runoff ratio**')
-ONE_yy=df.groupby('yyyy')['rf','et','sim_mm','obs_mm'].sum()
+#st.markdown('**# Yearly runoff ratio**')
+#ONE_yy=df.groupby('yyyy')['rf','et','sim_mm','obs_mm'].sum()
 #ONE_yy['ratio_obs']=ONE_yy['obs_mm']/ONE_yy['rf']*100
 #ONE_yy['ratio_one']=ONE_yy['sim_mm']/ONE_yy['rf']*100
 #ONE_yy=ONE_yy[['rf','et','obs_mm','sim_mm','ratio_obs','ratio_one']]
