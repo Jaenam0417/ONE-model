@@ -245,12 +245,12 @@ st.write(fig)
 
 ###Yearly
 st.markdown('**# Yearly runoff ratio**')
-ONE_yy=df.groupby('yyyy')['rf','et','sim_mm','obs_mm'].sum()
-ONE_yy['ratio_obs']=ONE_yy['obs_mm']/ONE_yy['rf']*100
-ONE_yy['ratio_one']=ONE_yy['sim_mm']/ONE_yy['rf']*100
-ONE_yy=ONE_yy[['rf','et','obs_mm','sim_mm','ratio_obs','ratio_one']]
-ONE_yy.rename(columns = {'rf':'Rainfall','et':'ET', 'obs_mm':'Obs.value(mm)', 'sim_mm':'Sim.value(mm)', 'ratio_obs':'Obs.ratio(%)', 'ratio_one':'Sim.ratio(%)'},inplace=True)
-TT=ONE_yy.style.format({'Rainfall' : '{:.2f}', 'ET' : '{:.2f}', 'Obs.value(mm)' : '{:.2f}', 'Sim.value(mm)' : '{:.2f}', 'Obs.ratio(%)' : '{:.2f}', 'Sim.ratio(%)' : '{:.2f}'})
-st.dataframe(TT, 1000, 300)
+#ONE_yy=df.groupby('yyyy')['rf','et','sim_mm','obs_mm'].sum()
+#ONE_yy['ratio_obs']=ONE_yy['obs_mm']/ONE_yy['rf']*100
+#ONE_yy['ratio_one']=ONE_yy['sim_mm']/ONE_yy['rf']*100
+#ONE_yy=ONE_yy[['rf','et','obs_mm','sim_mm','ratio_obs','ratio_one']]
+#ONE_yy.rename(columns = {'rf':'Rainfall','et':'ET', 'obs_mm':'Obs.value(mm)', 'sim_mm':'Sim.value(mm)', 'ratio_obs':'Obs.ratio(%)', 'ratio_one':'Sim.ratio(%)'},inplace=True)
+#TT=ONE_yy.style.format({'Rainfall' : '{:.2f}', 'ET' : '{:.2f}', 'Obs.value(mm)' : '{:.2f}', 'Sim.value(mm)' : '{:.2f}', 'Obs.ratio(%)' : '{:.2f}', 'Sim.ratio(%)' : '{:.2f}'})
+#st.dataframe(TT, 1000, 300)
                    
 
